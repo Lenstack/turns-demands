@@ -1,4 +1,4 @@
-const loadExcel = require('./utils/loadExcel')
+const loadExcel = require('./utils/readExcel')
 const createUser = require("./core/repositories/createUser");
 const chooseIsAvailable = require('./core/chooseIsAvailable')
 
@@ -7,7 +7,7 @@ const chooseIsAvailable = require('./core/chooseIsAvailable')
         /*
             // If First start the app - Here you will write the logic to load the excel file
             const file = 'file.xlsx'
-            const excelData = await loadExcel(file)
+            const excelData = await readExcel(file)
 
             // Here you will implement the logic to create the users in the database
             const user = {
