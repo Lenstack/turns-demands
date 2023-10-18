@@ -2,8 +2,8 @@
 const chooseIsAvailable = async (users, restrictions) => {
     //verify if the user pass the restrictions
     for (const user of users) {
-        switch (user.restrictions) {
-            case 'isAvailable':
+        switch (restrictions) {
+            case 'restriction':
                 console.log('The user is available')
                 break;
             default:
